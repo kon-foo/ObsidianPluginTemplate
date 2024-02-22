@@ -21,9 +21,10 @@ const copyToVault = () => {
 		console.log(`Created plugin directory: ${targetDir}`);
 	}
 
-	// Copy main.js and manifest.json to the target directory
+	// Copy main.js, style.css & manifest.json to the target directory
 	fs.copyFileSync('main.js', path.join(targetDir, 'main.js'));
 	fs.copyFileSync('manifest.json', path.join(targetDir, 'manifest.json'));
+	fs.copyFileSync('styles.css', path.join(targetDir, 'styles.css'));
 	console.log('Files copied to test vault.');
   };
 
