@@ -105,7 +105,7 @@ class SampleModal extends Modal {
 	}
 }
 
-class SampleSettingTab extends PluginSettingTab {
+class PluginTemplateSettingTab extends PluginSettingTab {
 	plugin: PluginTemplate;
 
 	constructor(app: App, plugin: PluginTemplate) {
