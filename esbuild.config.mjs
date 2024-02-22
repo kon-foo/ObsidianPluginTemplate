@@ -17,6 +17,7 @@ const copyToVault = () => {
 	// Check if the target directory exists, create it if not
 	if (!fs.existsSync(targetDir)) {
 		fs.mkdirSync(targetDir, { recursive: true });
+		fs.writeFileSync(path.join(targetDir, '.hotreload'), '');
 		console.log(`Created plugin directory: ${targetDir}`);
 	}
 
