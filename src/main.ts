@@ -1,5 +1,5 @@
 import { App, Modal, Plugin } from 'obsidian';
-import { PluginTemplateSettingTab } from './settings/settingsTab';
+import { SettingsTab } from './ui';
 import { defaultSettings, PluginTemplateSettings } from './settings/pluginSettings';
 
 
@@ -10,8 +10,9 @@ export default class PluginTemplate extends Plugin {
 		console.log('loading plugin');
 		await this.loadSettings();
 		// This adds a settings tab so the user can configure various aspects of the plugin
-		this.addSettingTab(new PluginTemplateSettingTab(this.app, this));
+		this.addSettingTab(new SettingsTab(this.app, this));
 	}
+	
 
 	onunload() {
 		console.log('unloading plugin');
