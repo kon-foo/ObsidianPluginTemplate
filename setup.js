@@ -46,9 +46,9 @@ function updateProject() {
     // Paths to the files you want to update
     const manifestJsonPath = path.join(__dirname, 'manifest.json');
     const packageJsonPath = path.join(__dirname, 'package.json');
-    const mainTsPath = path.join(__dirname, 'main.ts');
-    const pluginSettingsTsPath = path.join(__dirname, 'settings', 'pluginSettings.ts');
-    const settingsTabTsPath = path.join(__dirname, 'settings', 'settingsTab.ts');
+    const mainTsPath = path.join(__dirname, 'src', 'main.ts');
+    const pluginSettingsTsPath = path.join(__dirname, 'src',  'settings', 'pluginSettings.ts');
+    const settingsTabTsPath = path.join(__dirname, 'src', 'settings', 'settingsTab.ts');
     // const esbuildConfigPath = path.join(__dirname, 'esbuild.config.mjs');
     const communityPluginsJsonPath = path.join(__dirname, 'testVault', '.obsidian', 'community-plugins.json');
 
