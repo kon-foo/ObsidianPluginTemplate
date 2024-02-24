@@ -35,6 +35,11 @@ git add .gitmodules testVault
 To update the submodules (DevContainer and TestVault) to the latest version:
 `git submodule update --remote --merge`
 
+
+## ESLint and Prettier
+This template uses ESLint and Prettier to enforce a consistent code style. VSCode is configured to run Prettier on save. ESLint (with a Prettier plugin) can be run manually with `npm run lint`. I just got into JavaScript and TypeScript development and haven't settled on an opionion yet, so feel free to suggest better settings.
+
+
 ## Releasing new releases
 [Source](https://github.com/obsidianmd/obsidian-sample-plugin)
 Update your manifest.json with your new version number, such as 1.0.1, and the minimum Obsidian version required for your latest release.
