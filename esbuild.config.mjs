@@ -25,7 +25,7 @@ const copyToVault = () => {
 	fs.copyFileSync('main.js', path.join(targetDir, 'main.js'));
 	fs.copyFileSync('manifest.json', path.join(targetDir, 'manifest.json'));
 	fs.copyFileSync('src/styles.css', path.join(targetDir, 'styles.css'));
-	console.log('Files copied to test vault.');
+	console.log('🔥 Files copied to test vault.');
   };
 
 const prod = (process.argv[2] === "production");
@@ -36,7 +36,7 @@ const context = await esbuild.context({
 	banner: {
 		js: banner,
 	},
-	entryPoints: ["src/main.ts"],
+	entryPoints: ["./src/main.ts"],
 	bundle: true,
 	external: [
 		"obsidian",
